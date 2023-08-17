@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+body {
+  background-color: #282c34;
+  background-image: url(asset/background.jpg);
+  min-height: 100vh;
+  color: white;
+  text-shadow: 1px 1px 2px #000;
+  background-size: 100%;
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading>img {
+  width: 60px;
+  animation: App-logo-spin infinite 4s linear;
+
+}
+
+.name {
+  margin: 0px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.question {
+
+  margin: 10px;
+  height: auto;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #000000c2;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.boxs {
+  width: 150px;
+  height: auto;
+  padding: 1px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: left !important;
+}
+
+.table {
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 20px auto;
+  min-width: 70%;
+}
+
+.th {
+  border-bottom: 2px solid #fff;
+  padding: 1%;
+  text-align: center;
+}
+
+.td {
+  border-bottom: 1px solid #ffffffc2;
+  text-align: center;
+  padding: 1%;
+}
+
+.color {
+  background-color: #000 !important;
+}
+
+.main-congtainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cookieCard {
+  width: 300px;
+  height: auto;
+  background: linear-gradient(to right, rgb(34, 34, 34), rgb(10, 10, 10));
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.cookieCard::before {
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255));
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  right: -25%;
+  top: -25%;
+}
+
+.cookieHeading {
+  margin: 0 auto;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgb(241, 241, 241);
+  z-index: 2;
+}
+
+.cookieEmail {
+  margin: 0;
+  color: #6d6d6d;
+  text-shadow: 1px 1px 6px #000;
+}
+
+.cookieDescription {
+  font-size: 0.9em;
+  color: rgb(241, 241, 241);
+  z-index: 2;
+  margin: 5px auto;
+}
+
+.idNum {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.title-heading {
+  color: #b4b4b4;
+  text-shadow: 1px 1px 6px #000;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+  margin: 0px;
+}
